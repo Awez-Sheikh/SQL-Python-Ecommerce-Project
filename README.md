@@ -1,6 +1,6 @@
 # SQL-Python-Ecommerce-Project
 
-Project Title:
+**Project Title:**
 “E-Commerce Data Analysis: Leveraging SQL and Python for Business Insights”
 
 Project Overview:
@@ -8,9 +8,9 @@ This project is centered on analyzing a comprehensive E-Commerce transactional d
 
 The project is segmented into three tiers of analytical difficulty — Easy, Intermediate, and Hard — allowing a progressive demonstration of data extraction, transformation, and deep analysis skills.
 
- Workflow: Step-by-Step Execution
+**Workflow: Step-by-Step Execution**
  
-Step 1: Data Acquisition and Preparation
+**Step 1: Data Acquisition and Preparation**
 
 Multiple .csv files including:
 
@@ -21,7 +21,7 @@ Each file contains tabular data relevant to different e-commerce operations.
 
 
 
-Step 2: Database Integration with MySQL
+**Step 2: Database Integration with MySQL**
 
 A custom Python script (csv_to_sql.py) was created to automate:
 
@@ -38,7 +38,7 @@ Inserting the data from CSVs into SQL using mysql-connector
 
 
 
-Step 3: Jupyter Notebook Analysis
+**Step 3: Jupyter Notebook Analysis**
 
 The main analytical component was built using a Jupyter Notebook titled python+sql_ecommerce.ipynb.
 
