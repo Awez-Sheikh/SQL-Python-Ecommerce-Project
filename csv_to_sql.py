@@ -6,23 +6,25 @@ import os
 csv_files = [
     ('customers.csv', 'customers'),
     ('orders.csv', 'orders'),
-    ('sales.csv', 'sales'),
+    ('sellers.csv', 'sales'),
     ('products.csv', 'products'),
-    ('delivery.csv', 'delivery'),
-    ('payments.csv', 'payments')  # Added payments.csv for specific handling
+    ('geolocation.csv', 'delivery'),
+    ('payments.csv', 'payments'),
+    ('order_items.csv', 'order_items')  # Added payments.csv for specific handling
 ]
 
 # Connect to the MySQL database
 conn = mysql.connector.connect(
-    host='your_host',
-    user='your_username',
-    password='your_password',
-    database='your_database'
+    host='localhost',
+    user='root',
+    password='@wez$heikh0070',
+    database='ecommerce'
 )
 cursor = conn.cursor()
 
 # Folder containing the CSV files
-folder_path = 'path_to_your_folder'
+folder_path = 'C:/Users/awezs/Downloads/archive (5)'
+
 
 def get_sql_type(dtype):
     if pd.api.types.is_integer_dtype(dtype):
@@ -36,15 +38,16 @@ def get_sql_type(dtype):
     else:
         return 'TEXT'
 
+
 for csv_file, table_name in csv_files:
     file_path = os.path.join(folder_path, csv_file)
-    
+
     # Read the CSV file into a pandas DataFrame
     df = pd.read_csv(file_path)
-    
+
     # Replace NaN with None to handle SQL NULL
     df = df.where(pd.notnull(df), None)
-    
+
     # Debugging: Check for NaN values
     print(f"Processing {csv_file}")
     print(f"NaN values before replacement:\n{df.isnull().sum()}\n")
