@@ -9,11 +9,10 @@ This project is centered on analyzing a comprehensive E-Commerce transactional d
 The project is segmented into three tiers of analytical difficulty — Easy, Intermediate, and Hard — allowing a progressive demonstration of data extraction, transformation, and deep analysis skills.
 
  Workflow: Step-by-Step Execution
+ 
 Step 1: Data Acquisition and Preparation
 Multiple .csv files including:
-
 customers.csv, orders.csv, products.csv, sellers.csv, order_items.csv, payments.csv, geolocation.csv
-
 Each file contains tabular data relevant to different e-commerce operations.
 
 Step 2: Database Integration with MySQL
