@@ -11,11 +11,17 @@ The project is segmented into three tiers of analytical difficulty — Easy, Int
  Workflow: Step-by-Step Execution
  
 Step 1: Data Acquisition and Preparation
+
 Multiple .csv files including:
+
 customers.csv, orders.csv, products.csv, sellers.csv, order_items.csv, payments.csv, geolocation.csv
+
 Each file contains tabular data relevant to different e-commerce operations.
 
+
+
 Step 2: Database Integration with MySQL
+
 A custom Python script (csv_to_sql.py) was created to automate:
 
 Reading .csv files with Pandas
@@ -28,7 +34,10 @@ Cleaning column names (removal of special characters)
 
 Inserting the data from CSVs into SQL using mysql-connector
 
+
+
 Step 3: Jupyter Notebook Analysis
+
 The main analytical component was built using a Jupyter Notebook titled python+sql_ecommerce.ipynb.
 
 It connects to the MySQL database using mysql.connector.
