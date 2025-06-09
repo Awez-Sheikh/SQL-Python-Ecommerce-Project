@@ -20,6 +20,7 @@ Each file contains tabular data relevant to different e-commerce operations.
 
 
 
+
 Step 2: Database Integration with MySQL
 
 A custom Python script (csv_to_sql.py) was created to automate:
@@ -36,6 +37,7 @@ Inserting the data from CSVs into SQL using mysql-connector
 
 
 
+
 Step 3: Jupyter Notebook Analysis
 
 The main analytical component was built using a Jupyter Notebook titled python+sql_ecommerce.ipynb.
@@ -45,6 +47,7 @@ It connects to the MySQL database using mysql.connector.
 Each business question is answered using SQL queries.
 
 Results are extracted using Python, processed with Pandas, and visualized using Matplotlib and Seaborn.
+
 
 
 
