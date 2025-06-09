@@ -97,3 +97,7 @@ Year-over-year growth rate of total revenue
 Customer retention rate (within 6 months)
 
 Top 3 high-spending customers per year using partitioned ranking
+
+
+**Key Features:**
+This project showcases dynamic SQL table creation, efficient ETL with Python, advanced SQL queries (CTEs, window functions), and integrated visualizations. Its tiered question structure, real-world e-commerce context, and clean modular code make it both analytically rich and professionally impactful.
